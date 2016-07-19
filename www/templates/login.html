@@ -1,0 +1,64 @@
+<ion-view>
+
+	<ion-nav-bar class="login-bar bar bar-header animated fadeInDown"  align-title="center">
+	
+
+    	
+    	<ion-nav-title class="login-title">
+
+      		Make My Lens
+    	</ion-nav-title> 
+
+    	<a href="#/about-us" style="z-index:100; float:right;">
+      			<img src="img/info.png" height="32">
+      		</a>	
+  			
+  	</ion-nav-bar>  
+
+
+
+  <ion-content class="padding">
+
+  <ion-list>
+
+  	<div class="list animated fadeInDown">
+
+  		<div id="logo" >
+
+  		</div>
+
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label">Email</span>
+	    <input type="text" placeholder="Enter your email">
+	  </label>
+	  <!-- <label class="item item-input item-stacked-label">
+	    <span class="input-label">Password</span>
+	    <input type="password" placeholder="Enter password">
+	  </label> -->
+
+	</div>
+
+	</ion-list>
+
+	<div class="animated fadeInUp">
+	
+		<button class="button button-block button-balanced" ng-click="fbLogin()">
+	  		Continue with Email
+		</button>
+			
+		<button class="button button-block button-positive" style="background-color:#DF4A32;" ng-click="googleLogin()">
+	  		Continue with Gmail
+		</button>
+
+		<button class="button button-block button-positive" style="background-color:#3B5998;" ng-click="fbLogin()">
+	  		Continue with Facebook
+		</button>
+
+		<button class="button button-block button-outline button-energized" ng-click="continueAsGuest()">
+	  		Continue as guest
+		</button>
+
+	</div>
+
+  </ion-content>
+</ion-view>

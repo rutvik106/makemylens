@@ -1,0 +1,114 @@
+<ion-view>
+
+
+	<ion-nav-bar class="signup-bar" align-title="center">
+
+		<ion-nav-title class="signup-title">
+      		John jacobs new york
+    	</ion-nav-title>
+
+    	<ion-nav-back-button style="color: #ffffff;">
+    	</ion-nav-back-button>
+
+	</ion-nav-bar>
+
+
+	<ion-content>
+	
+
+		<div class="item-container">
+          <img class="item-image" src={{itemImage}}>
+          <div class="row eg-available-images-container">
+            <div class="col eg-available-images">
+              <a ng-click="changeItemImage(1)"><img src="img/sg1_small.jpg" class="image-box-small"/></a>
+              <a ng-click="changeItemImage(2)"><img src="img/sg1side1_small.jpg" class="image-box-small"/></a>
+              <a ng-click="changeItemImage(3)"><img src="img/sg1side2_small.jpg" class="image-box-small"/></a>
+            </div>
+          </div>
+        </div>
+
+        
+			<div ion-affix data-affix-within-parent-with-class="list" class="padding">
+	        <div class="row">
+	        	<div class="col" style="margin:2px;">
+	        		<button class="button button-block button-balanced">
+		  				Buy Now
+					</button>
+	        	</div>
+	        	<div class="col" style="margin:2px;">
+	        		<button class="button button-block button-positive" ng-click="addPower()">
+		  				Add Power
+					</button>
+	        	</div>
+	        	<div class="col" style="margin:2px;">
+	        		<button class="button button-block button-dark">
+		  				Buy Frame
+					</button>
+	        	</div>
+	        </div>
+	    </div>
+
+        <div class="padding">
+
+        <div class="row item" style="padding:10px;">
+  			<div class="col">Size<br/><b>Medium</b></div>
+  			<div class="col">Color<br/><b>Brown Gradient</b></div>
+		</div>
+
+		<div class="row item" style="padding:10px;">
+			<div class="col">Style<br/><b>Aviator</b></div>
+  			<div class="col">Measurements<br/><b>58-14-135</b></div>
+		</div>
+
+		<div class="row item item-body" style="padding:10px; display:block;">
+			<p style="text-align:justify;">Vincent Chase Top Guns VC 5158/P Golden Brown Gradient 90EO/IO Aviator Polarized Sunglasses
+Brand: Vincent Chase Sunglasses, Product Type: Sunglasses, Frame Type: Full Rim Sunglasses, Frame Shape: Aviator, Gender: Men & Women Vincent Chase VC 5158/P Golden Brown Gradient 90EO/IO Aviator Polarized Sunglasses</p>
+		</div>
+
+		<h4 style="text-align:center;">REVIEWS</h4><hr></hr>
+
+
+			<div class="card">
+
+			  <div class="item">
+			  	<div class="stars"><rating ng-model="rating.rate" max="rating.max" style="width:200px;"></rating></div><br/>
+			    <h2>Marty McFly</h2>
+			    <p>Jun 05, 2016</p>
+			  </div>
+
+			  <div class="item item-body">
+			  	<h3>Excellent Product</h3>
+			    <p>
+			      I got this glasses at great discount....The glasses are worth for and has good quality too.
+			    </p>
+			  </div>
+
+			</div>
+
+
+			<div class="card">
+
+			  <div class="item">
+			  	<div class="stars"><rating ng-model="rating.rate" max="rating.max" style="width:200px;"></rating></div><br/>
+			    <h2>Vinu</h2>
+			    <p>June 20,2016</p>
+			  </div>
+
+			  <div class="item item-body">
+			  	<h3>Happy with them!</h3>
+			    <p>
+			      An awesome product .
+I hardly saved it from my friends , who tried to grab this specs from me :)
+			    </p>
+			  </div>
+
+			</div>
+
+
+		</div>
+
+
+	</ion-content>
+
+
+</ion-view>

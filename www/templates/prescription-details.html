@@ -1,0 +1,325 @@
+<ion-view>
+
+	<ion-side-menus>
+
+
+
+		<ion-side-menu-content ng-controller="PrescriptionDetailsNavCtrl">
+
+
+			<ion-nav-bar class="signup-bar" align-title="center">
+
+				<ion-nav-title class="signup-title">
+					Add Power
+				</ion-nav-title>
+
+				<ion-nav-buttons side="right">
+					<button class="button button-icon button-clear ion-navicon" style="color:#ffffff;" ng-click="showRightMenu()">
+					</button>
+				</ion-nav-buttons>
+
+				<ion-nav-buttons side="left">
+					<button class="button button-icon button-clear ion-navicon" style="color:#ffffff;" ng-click="showLeftMenu()">
+					</button>
+				</ion-nav-buttons>
+
+				<ion-nav-back-button style="color: #ffffff;">
+				</ion-nav-back-button>
+
+			</ion-nav-bar>
+
+			<ion-content class="prescription-content">
+
+				<div class="row">
+
+					<div class="col">
+						<img src="img/power-eye.png" class="center eye-margin" height="100" ng-click="showLeftMenu()"/>
+						<span class="center">Left Eye</span>
+					</div>
+
+					<div class="col">
+						<img src="img/power-eye.png" class="center eye-margin" height="100" ng-click="showRightMenu()"/>
+						<span class="center">Right Eye</span>
+					</div>
+
+				</div>
+
+			</div>
+
+			<ion-floating-button click="careAndServices()" has-footer="false" button-color="#2AC9AA" icon="icon ic-done" iconColor="#fff">
+			</ion-floating-button>
+
+		</ion-content>
+
+
+
+	</ion-side-menu-content>
+
+	<ion-side-menu side="right">
+
+		<ion-header-bar class="bar bar-header bar-assertive">
+			<h1 class="title">Right Eye Refraction</h1>
+		</ion-header-bar>
+
+		<ion-content has-header="true">
+
+			<div class="row">
+				<div class="col">
+					<span class="input-label" style="text-align:center; width:100%; max-width:100%;">Sph.</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="N">
+					</label>
+				</div>
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="D">
+					</label>
+				</div>
+
+			</div>
+
+
+
+			<div class="row">
+				<div class="col">
+					<span class="input-label" style="text-align:center; width:100%; max-width:100%;">Cyl.</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="N">
+					</label>
+				</div>
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="D">
+					</label>
+				</div>
+
+			</div>
+
+
+
+
+
+			<div class="row">
+				<div class="col">
+					<span class="input-label" style="text-align:center; width:100%; max-width:100%;">Axis</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="N">
+					</label>
+				</div>
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="D">
+					</label>
+				</div>
+
+			</div>
+
+
+
+			<div class="row">
+				<div class="col">
+					<span class="input-label" style="text-align:center; width:100%; max-width:100%;">Add</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="N">
+					</label>
+				</div>
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="D">
+					</label>
+				</div>
+
+			</div>
+
+
+
+			<div class="row">
+				<div class="col">
+				<span class="input-label" style="text-align:center; width:100%; max-width:100%;">V/N</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="V/N">
+					</label>
+				</div>
+
+			</div>
+
+
+
+		</ion-content>
+
+	</ion-side-menu>
+
+
+	<ion-side-menu side="left">
+		<ion-header-bar class="bar bar-header bar-assertive">
+			<h1 class="title">Left Eye Refraction</h1>
+		</ion-header-bar>
+		<ion-content has-header="true">
+			
+						<div class="row">
+				<div class="col">
+					<span class="input-label" style="text-align:center; width:100%; max-width:100%;">Sph.</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="N">
+					</label>
+				</div>
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="D">
+					</label>
+				</div>
+
+			</div>
+
+
+
+			<div class="row">
+				<div class="col">
+					<span class="input-label" style="text-align:center; width:100%; max-width:100%;">Cyl.</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="N">
+					</label>
+				</div>
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="D">
+					</label>
+				</div>
+
+			</div>
+
+
+
+
+
+			<div class="row">
+				<div class="col">
+					<span class="input-label" style="text-align:center; width:100%; max-width:100%;">Axis</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="N">
+					</label>
+				</div>
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="D">
+					</label>
+				</div>
+
+			</div>
+
+
+
+			<div class="row">
+				<div class="col">
+					<span class="input-label" style="text-align:center; width:100%; max-width:100%;">Add</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="N">
+					</label>
+				</div>
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="D">
+					</label>
+				</div>
+
+			</div>
+
+
+
+			<div class="row">
+				<div class="col">
+				<span class="input-label" style="text-align:center; width:100%; max-width:100%;">V/N</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col">
+					<label class="item item-input">
+						<input type="text" placeholder="V/N">
+					</label>
+				</div>
+
+			</div>
+
+		</ion-content>
+	</ion-side-menu>
+
+
+</ion-side-menus>
+
+
+
+</ion-view>
